@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    
 }
 
 h1 {
@@ -39,3 +40,31 @@ td {
 input[type=number] {
     width: 6em;
 }
+
+.animate-me {
+    
+    animation: 4s infinite bgcolorchange;
+  }
+  @keyframes bgcolorchange {
+    0% {
+      color: red;
+    }
+    25% {
+      background: green;
+    }
+    50% {
+      background: yellow;
+    }
+    75% {
+      background: yellow;
+    }
+    100% {
+      background-color: red;
+    }
+  }
+  @-webkit-keyframes bgcolorchange {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      75%  {background: green;}
+      100% {background: blue;}
+  }
